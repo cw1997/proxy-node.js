@@ -31,7 +31,7 @@ const baseUrlAsktug = 'https://asktug.com'
 app.use(async (ctx) => {
   const requestUrl = ctx.request.url
   let baseUrl = ''
-  if (requestUrl.startsWith('/api') || requestUrl.startsWith('/blog')) {
+  if (requestUrl.startsWith('/api') || requestUrl.startsWith('/next-api') || requestUrl.startsWith('/blog')) {
     baseUrl = baseUrlCommunity
   } else {
     baseUrl = baseUrlAsktug
