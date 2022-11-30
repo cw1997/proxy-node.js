@@ -7,7 +7,8 @@ const app = express();
 app.use(cors())
 
 app.use('/', function(req, res) {
-const url = 'https://changwei.me' + req.url;
+// const url = 'https://community-preview.tidb.net' + req.url;
+const url = 'https://asktug.com' + req.url;
   req.pipe(request(url)).pipe(res);
 });
 

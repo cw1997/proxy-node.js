@@ -1,9 +1,17 @@
 {
   "dependencies": {
+    "@koa/cors": "^4.0.0",
+    "axios": "^1.2.0",
     "command-line-args": "^5.2.1",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
     "express": "^4.18.2",
-    "http-proxy": "^1.18.1",
-    "request": "^2.88.2"
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^12.0.0",
+    "koa2-proxy-middleware": "^0.0.4"
+  },
+  "scripts": {
+    "start": "cross-env NODE_TLS_REJECT_UNAUTHORIZED='0' nodemon ./koa.js"
   }
 }
